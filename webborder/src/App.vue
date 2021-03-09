@@ -19,6 +19,37 @@
           <template #left>
             <img src="./assets/logo.png" height="50px" />
           </template>
+          <template #right>
+            <div class="center">
+      <vs-select placeholder="" v-model="value">
+       
+        
+          <vs-button> Inloggad som:</vs-button>
+       
+         
+        <vs-button> Steven</vs-button>
+         <vs-button>Logga ut</vs-button>
+        <vs-option label="Vue" value="2">
+          Vue
+        </vs-option>
+        <vs-option label="Javascript" value="3">
+          Javascript
+        </vs-option>
+        <vs-option disabled label="Sass" value="4">
+          Sass
+        </vs-option>
+        <vs-option label="Typescript" value="5">
+          Typescript
+        </vs-option>
+        <vs-option label="Webpack" value="6">
+          Webpack
+        </vs-option>
+        <vs-option label="Nodejs" value="7">
+          Nodejs
+        </vs-option>
+      </vs-select>
+    </div>
+          </template>
           <vs-navbar-group to="/Rundvandring">
             Hem
 
@@ -106,8 +137,36 @@
           </div>
         </div>
       </div>
-      //test
-
+      <!-- //test -->
+      test
+      <div class="center">
+      <vs-select placeholder="" v-model="value">
+       
+        
+          <vs-button> Inloggad som:</vs-button>
+       
+         
+        <vs-button> Steven</vs-button>
+        <vs-option label="Vue" value="2">
+          Vue
+        </vs-option>
+        <vs-option label="Javascript" value="3">
+          Javascript
+        </vs-option>
+        <vs-option disabled label="Sass" value="4">
+          Sass
+        </vs-option>
+        <vs-option label="Typescript" value="5">
+          Typescript
+        </vs-option>
+        <vs-option label="Webpack" value="6">
+          Webpack
+        </vs-option>
+        <vs-option label="Nodejs" value="7">
+          Nodejs
+        </vs-option>
+      </vs-select>
+    </div>
       <!-- <footer>
     <h1>hej</h1>
   </footer> -->
@@ -124,6 +183,7 @@ export default {
   components: {},
   data: () => ({
     active: "guide",
+    value: '',
   }),
 };
 </script>
@@ -173,6 +233,6 @@ body {
 
 #nav a.router-link-exact-active {
   color: #42b983;
-  
+
 }
 </style>
